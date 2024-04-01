@@ -1,5 +1,2 @@
 # Defect detection in a CFRP containing FBH defects using Unet structure trained on successive wavenumber (SWF) filtering result
-In this project, first successive numdamage maps corresponding to different center frequency of the Insert dataset are obtained after applying SWF.
-Then with constructing a hyper image constructed from previously obtained maps, train set is constructed.
-For training, multiple patches of this hyper image are extracted. Then, a UNET structure is trained with such 
-hyper windows. At the end, the trained model is tested on a FBH dataset. 
+In this project, first, successive numdamage maps corresponding to different center frequency of an CFRP containing Insert dataset are obtained after applying SWF. Then with constructing a hyper image constructed from previously obtained maps and extracting multiple local patches train set is constructed. Eventually, a specteral UNET structure is trained on the previously obtained hyper windows. At the end, the trained model is tested on a FBH dataset, revealing most FBH defects. 
