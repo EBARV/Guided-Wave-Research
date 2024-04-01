@@ -118,10 +118,8 @@ def conv_forward(A_prev,stride,pad,f,n_c):
                     Z.append(a_prev_pad[vert_start:vert_end,horiz_start:horiz_end,:])                    
     return Z
 
+### Extracting local patches from the maps and reshaping the result
 Data=conv_forward(A_prev=X,stride=1,pad=3,f=7,n_c=1) # the whole dataset
-print(Data[0].shape)
-print(len(Data))
-
 Data_5D=np.zeros([4335,7,7,2361])
 for i in range(len(Data)):
     Data_5D[i,:,:,:]=Data[i][:,:,:]
@@ -129,6 +127,8 @@ Data_5D=Data_5D.reshape(4335,7,7,2361,1)
 Data_5D.shape
 Data_5D=np.reshape(Data_5D,(4335,7,7,2361))
 Data_5D[2001,3,3,123,0]==X.reshape(85*51,2361)[2001,123] #Checking
+
+###Train and test set construction
 Targets=Data_5D
 Inputs=np.load('Whole_Inputs.npy')
 
@@ -155,6 +155,7 @@ for i in range (Train_x.shape[0]):
 Train_x_I = Train_x
 np.save("Inputs_I",Train_x_I) 
 
+### Data undersamping
 Inputs_ndft=np.load('Inputs_nonDefects.npy')
 train_y=np.zeros([3339,])
 train_y=pd.Series(train_y)
@@ -170,6 +171,7 @@ for i in range (Train_x.shape[0]):
 under_sample_Inputs_ndft=Train_x
 np.save("Inputs_nondefects_undersample",under_sample_Inputs_ndft) 
 
+### Spectreral CNN training 
 nondfct = np.load('Inputs_nondefects_undersample.npy')
 dfct = np.load('Inputs_Defects.npy')
 Data = np.load('Whole_Inputs.npy')
