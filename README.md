@@ -8,5 +8,5 @@ This repository aims to implement Weighted Bandpower (WBP) as introduced in [thi
   <b>Result</b><br>
 </h2>
 <h2 align="center">
-  <img src="https://github.com/ErfanBrv/Weighted-Band-Power/blob/main/Result.png">
+  <img src="https://github.com/ErfanBrv/Weighted-Band-Power/blob/main/DM.png">
 </h2>
