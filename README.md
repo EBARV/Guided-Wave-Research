@@ -8,32 +8,5 @@ In this reposity, first a train set is obtained with the application of k-means 
 
 
 | Model | Samples |
-|------------------------------------------------------------------------|--------------------------------------------------|---------------|---------|
+|------------------------------------------------------------------------|--------------------------------------------------|
 | VAE ([Code][vae_code], [Config][vae_config])| ![][1]  |
-
-
-<!-- | Gamma VAE             |[Link](https://arxiv.org/abs/1610.05683)          |    ![][16]    | ![][15] |-->
-
-<!--
-### TODO
-- [x] VanillaVAE
-- [x] Beta VAE
-- [x] DFC VAE
-- [x] MSSIM VAE
-- [x] IWAE
-- [x] MIWAE
-- [x] WAE-MMD
-- [x] Conditional VAE- [ ] PixelVAE
-- [x] Categorical VAE (Gumbel-Softmax VAE)
-- [x] Joint VAE
-- [x] Disentangled beta-VAE
-- [x] InfoVAE
-- [x] LogCosh VAE
-- [x] SWAE
-- [x] VQVAE
-- [x] Beta TC-VAE
-- [x] DIP VAE
-- [ ] Ladder VAE (Doesn't work well)
-- [ ] Gamma VAE (Doesn't work well) 
-- [ ] Vamp VAE (Doesn't work well)
--->
