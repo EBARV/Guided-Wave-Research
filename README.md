@@ -6,5 +6,5 @@ In this reposity, first a train set is obtained with the application of k-means 
   <b>Flowchart</b><br>
 </h2>
 <h2 align="center">
-  <img src="https://github.com/AntixK/PyTorch-VAE/blob/master/assets/Vanilla%20VAE_25.png" alt="Flowchart">
+  <img src="https://github.com/ErfanBrv/Unsupervised-FBH-detection/blob/main/Algorithm.png">
 </h2>
