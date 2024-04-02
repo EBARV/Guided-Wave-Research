@@ -7,6 +7,6 @@ In this reposity, first a train set is obtained with the application of k-means 
 </h2>
 
 
-| Model | Samples |
+| Samples |
 |------------------------------------------------------------------------|--------------------------------------------------|
-| VAE ([Code][vae_code], [Config][vae_config])| ![][1]  |
+| ![][1]  |
