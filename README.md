@@ -8,5 +8,7 @@ In this reposity, first a train set is obtained with the application of k-means 
 
 
 | Samples |
-|------------------------------------------------------------------------|--------------------------------------------------|
+|------------------------------------------------------------------------|
 | ![][1]  |
+
+[1]: https://github.com/AntixK/PyTorch-VAE/blob/master/assets/Vanilla%20VAE_25.png
