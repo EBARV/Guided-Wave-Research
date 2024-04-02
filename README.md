@@ -5,9 +5,6 @@ In this reposity, first a train set is obtained with the application of k-means 
 <h2 align="center">
   <b>Flowchart</b><br>
 </h2>
-
 <h2 align="center">
-  |![][1]|
+  <img src="https://github.com/AntixK/PyTorch-VAE/blob/master/assets/Vanilla%20VAE_25.png" alt="Flowchart">
 </h2>
-
-[1]: https://github.com/AntixK/PyTorch-VAE/blob/master/assets/Vanilla%20VAE_25.png
