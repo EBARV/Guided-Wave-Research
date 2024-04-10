@@ -1,10 +1,6 @@
 %% Loading datasets
 clear
 clc
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Exp 
-% This is responsible for loding the dataset- CFRP1 in the article
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 load('CFRP_330x330_QuasiIso_FBHInCircle_Chirp_5to300kHz_TimeData')  
 load('ERF_Big.mat'); % Specifing the Nan values
 Vref = DataMatrix(4); Vref = Vref.SignalGrid;
@@ -91,8 +87,7 @@ end
 
 
 
-out1 = WBP1;
-out2 = permute(out1,[3,1,2]);
+out1 = WBP1; out2 = permute(out1,[3,1,2]);
 ff   = log(FBD1(out2,1,1200,1));
 
 
@@ -107,4 +102,4 @@ for i = 1:115
 end
 
 
-figure,imshow(LI(ff),[]),colormap('jet')
+figure,imshow((ff),[]),colormap('jet')
